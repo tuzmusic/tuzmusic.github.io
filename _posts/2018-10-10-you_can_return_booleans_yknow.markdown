@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "You can return Booleans, y'know!"
-date:       2018-10-10 16:13:57 +0000
+date:       2018-10-10 12:13:58 -0400
 permalink:  you_can_return_booleans_yknow
 ---
 
@@ -23,7 +23,7 @@ if x < y
   else
     false
   end
-	```
+```
 
 Does this seem a little verbose to you? A little redundant? Good eye, you're right!
 
