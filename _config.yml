@@ -1,11 +1,11 @@
 # Site settings
 author: Jonathan Tuzman
-title: 
+title: The Growing Coder
 header-img: img/home-bg.png
 email: tuzmusic@gmail.com
 copyright_name: Jonathan Tuzman
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Lessons I've Learned As I Code More Awesomely
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  tuzmusic
