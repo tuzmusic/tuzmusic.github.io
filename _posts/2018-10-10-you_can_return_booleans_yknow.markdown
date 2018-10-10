@@ -46,12 +46,12 @@ if x < y
   else
     return false
   end
-	```
-	you can simply write 
-	```
+```
+you can simply write 
+```
 	return x<y
-	``` 
-	instead! 
+``` 
+instead! 
 	
 To get a little more difficult, what about a Boolean method, like implementing your own version of `#all?` (that's the lesson that made me think of writing this, by the way!).
 
@@ -91,4 +91,26 @@ Phew, and I thought we were trying to be less verbose! I guess that's for my cod
 
 Come back next time for more tips and hacks!
 
+# > TL;DR
+You can always replace
+```
+if true_statement == true 
+	return true
+else
+	return false
+```
+with 
+``` 
+return true_statement
+```
+If you want 
+if true_statement == true 
+	return false
+else
+	return true
+```
+you can replace it with 
+``` 
+return !true_statement
+```
 
