@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "How to test #gets in rspec - Once and For All!!!"
-date:       2018-10-24 20:23:17 +0000
+date:       2018-10-24 16:23:18 -0400
 permalink:  how_to_test_gets_in_rspec_-_once_and_for_all
 ---
 
@@ -37,6 +37,8 @@ The `allow(obj)...` line sets up two important things.
 
 Then the last line (`expect...`) sets up the expectation normally as usual.
 
-I hope this made any sense to you and is helpful for this bewildering topic. My brain is fried. Time for some coffee.
+EDIT: So....this is actually wrong. That is to say, it's correct **only** if `method_that_calls_gets_and_returns_something`  *actually returns `"the desired output"`*. If it does something with the output and then returns *something else*, the test will fail. 
+
+So, stay tuned for the day I figure out how to just test the `gets` part. We'll see. 
 
 Happy coding!
