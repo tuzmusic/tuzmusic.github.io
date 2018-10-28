@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Update: rspec with puts and gets"
-date:       2018-10-28 21:38:22 +0000
+date:       2018-10-28 17:38:23 -0400
 permalink:  update_rspec_with_puts_and_gets
 ---
 
