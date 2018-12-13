@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Sinatra Portfolio Project: "But I only need one teaspoon of turmeric!""
-date:       2018-12-13 15:56:10 +0000
+date:       2018-12-13 10:56:11 -0500
 permalink:  sinatra_portfolio_project_but_i_only_need_one_teaspoon_of_turmeric
 ---
 
