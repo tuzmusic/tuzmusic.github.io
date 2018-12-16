@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Start your Flatiron projects quicker!"
-date:       2018-12-16 19:01:50 +0000
+title:      "Speed Up Your Workflow With Bash Scripting"
+date:       2018-12-16 14:01:50 -0500
 permalink:  start_your_flatiron_projects_quicker
 ---
 
