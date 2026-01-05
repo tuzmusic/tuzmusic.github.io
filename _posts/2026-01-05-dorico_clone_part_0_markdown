@@ -1,0 +1,37 @@
+---
+layout: post
+title:      "Dorico Clone Part 0"
+date:       2026-01-05 20:15:33 +0000
+permalink: dorico_clone_part_0
+---
+
+# Welcome back
+
+It's clearly been a long long time since I posted to this blog, which I created when going through Flatiron's Full Stack Development Boot Camp. Now I'm three jobs in, and on the next job search after a recent layoff, and I thought I'd come back to this and write about what I'm working on.
+
+I've always wanted to work on a real "app", one that *does* things and has *features*. Or at least something that *feels* like an app, rather than a website that's essentially just a list of things you can buy. Even if that app is just a basic SaaS dashboard.
+
+I want my next job to be on such an app, and I thought I'd build a portfolio project.
+
+# What I'm building
+
+But what to build? I'm going to skip all of that and get to the point: I'm building a music notation app. A very basic music notation app.
+
+Because music notation is hard. Super hard! So many problems to solve. Note spacing, for one. Not just on one staff but across multiple staves. All the features. That's too big. But it's a domain I care about and I love notation software. So how I'm thinking of this project is that it'll be a big, rich frontend project, with complex state, and it will essentially be an editor, but rather than a text editor which I can use off the open-source shelf (Lexical, e.g.), I'm also going to work on the fun-for-me problem of rendering music, and have all of the other functionality relate to the music.
+
+The music features will be VERY simple! There will be a single staff, possibly with options for 2 or more clefs. There will be notes with durations, and rests. There will be keys and meters. There will be barlines. There may or may not be multiple lines of music – that might be too hard. There will be some basic editing. Will chords (i.e., notes that aren't single notes) be supported? Probably not! Will there be beaming? Maybe!
+
+I started out with a Capacities project called "Dorico Clone." My repo is just called `music-notation-project`, but I think I'm going to keep referring to it here as Dorico Clone because of how absurd it is that this would reach anywhere near the complexity and power of Dorico.
+
+# How I'm Building It
+
+I'll be building the app in React. I'm going to render the music in React using SVGs, at first. Canvas is definitely the *right* way to render music, but there's so much else to figure out in how to just render music that I'm going to start with a declarative UI so there's only so many leaps I'm taking.
+
+The music will be modeled using classes, which is unorthodox for React. I'm going to try it. I had a talk with my friend Claude and we decided that classes can work if we use Immer for immutable state changes. I read some Immer docs and noticed that Claude didn't say *anything* about classes needing to declare `[immerable] = true` or any of the other stuff that the Immer docs say about using classes, so it's possible that my human research will show that this isn't a workable approach. But that actually won't come until we're *mutating* state, and there's a bunch of static state to render first!
+
+# Next up
+
+I don't know with what kind of regularity I'll document what I'm doing, not to mention how much time I'll be spending working on this project. After all, working on one big portfolio project is not actually high on the list of important ways to spend time while job searching. It is in fact, very near the bottom, or maybe hanging around near the bottom hoping to get on the list at all.
+
+But, next up I'll write some about the steps I've taken so far.
+
